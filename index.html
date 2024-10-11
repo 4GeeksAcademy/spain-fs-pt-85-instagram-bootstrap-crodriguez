@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<!-- navegación -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div>
+        <i class="fa-brands fa-instagram"></i>
+        <a class="navbar-brand" href="#">Instagram</a>
+      </div>
+      <div id="navbarTogglerDemo02">
+        <div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Create a new post
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    <div class="modal-body">
+                       <p>Caption:</p>
+                       <textarea id="text-post" name="text-post" rows="4" cols="50">Add the caption of your post here</textarea>
+                       <div>
+                        <i class="fa-solid fa-camera"></i>
+                        <i class="fa-solid fa-location-dot"></i>
+                       </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+            </a>
+          
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+              <li><a class="dropdown-item logout" href="#">Log out</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!-- navegación-end -->
+<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i>
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://phantom-marca.unidadeditorial.es/9e67ac39b965df186f97454b5cef4257/resize/828/f/webp/assets/multimedia/imagenes/2024/09/23/17270873775033.jpg" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://media.formula1.com/image/upload/f_auto,c_limit,w_960,q_auto/t_16by9North/f_auto/q_auto/fom-website/2023/Miscellaneous/GettyImages-1656999898" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://rtrsports.com/wp-content/uploads/2023/05/pexels-rezk-assaf-10795564-768x390.jpg" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://phantom-marca.unidadeditorial.es/7533e349dc5c65bc7b423646203b1903/resize/828/f/webp/assets/multimedia/imagenes/2024/09/22/17270154796644.jpg" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://rtrsports.com/wp-content/uploads/2023/05/pexels-rezk-assaf-10795564-768x390.jpg" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://phantom-marca.unidadeditorial.es/47654d4c67cca3d5ce33ac16c5b717a7/resize/828/f/webp/assets/multimedia/imagenes/2024/10/10/17285511213944.jpg" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://phantom-marca.unidadeditorial.es/98361c3435def943623853422f0627d8/resize/990/f/webp/assets/multimedia/imagenes/2024/10/10/17285544449756.jpg" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://phantom-marca.unidadeditorial.es/5d3c834f08ea2766b3dc15be1eb00e42/resize/828/f/webp/assets/multimedia/imagenes/2024/10/10/17285596539049.jpg" />
+      </div>
+      <div class="col-12 col-sm-6 col-md-4">
+        <img class="img-fluid" src="https://phantom-marca.unidadeditorial.es/924525f848a7f7a71314eeae5916f361/resize/828/f/webp/assets/multimedia/imagenes/2024/10/09/17285034028126.jpg" />
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+    <div class="contenido">
+      <div class="bloque">
+        <div class="cabecera">
+          <div><h2>Alonso presenta casco nuevo</h2></div><div><p>1/03</p></div>
+        </div>
+        <img src="https://phantom-marca.unidadeditorial.es/9e67ac39b965df186f97454b5cef4257/resize/828/f/webp/assets/multimedia/imagenes/2024/09/23/17270873775033.jpg" />
+        <p><strong>156 likes</strong></p>
+        <p class="descripcion">Esta es la descripción de la imagen mostrada en este marco</p>
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="bloque">
+        <div class="cabecera">
+          <div class="titu-img"><h2>Arranca el GP de San Marino</h2></div><div class="contador"><p>2/03</p></div>
+        </div>
+        <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_960,q_auto/t_16by9North/f_auto/q_auto/fom-website/2023/Miscellaneous/GettyImages-1656999898" />
+        <p><strong>236 likes</strong></p>
+        <p class="descripcion">Esta es la descripción de la imagen mostrada en este marco</p>
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="bloque">
+        <div class="cabecera">
+          <div class="titu-img"><h2>Sainz sigue una estrategia diferente</h2></div><div class="contador"><p>3/03</p></div>
+        </div>
+        <img src="https://rtrsports.com/wp-content/uploads/2023/05/pexels-rezk-assaf-10795564-768x390.jpg" />
+        <p><strong>105 likes</strong></p>
+        <p class="descripcion">Esta es la descripción de la imagen mostrada en este marco</p>
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="bloque">
+        <div class="cabecera">
+          <div class="titu-img"><h2>Albon y Sainz antes de la salida</h2></div><div class="contador"><p>4/03</p></div>
+        </div>
+        <img src="https://phantom-marca.unidadeditorial.es/47654d4c67cca3d5ce33ac16c5b717a7/resize/828/f/webp/assets/multimedia/imagenes/2024/10/10/17285511213944.jpg" />
+        <p><strong>189 likes</strong></p>
+        <p class="descripcion">Esta es la descripción de la imagen mostrada en este marco</p>
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="bloque">
+        <div class="cabecera">
+          <div class="titu-img"><h2>El Ferrari de Sainz durante warmup</h2></div><div class="contador"><p>4/03</p></div>
+        </div>
+        <img src="https://rtrsports.com/wp-content/uploads/2023/05/pexels-rezk-assaf-10795564-768x390.jpg" />
+        <p><strong>189 likes</strong></p>
+        <p class="descripcion">Esta es la descripción de la imagen mostrada en este marco</p>
+      </div>
+    </div>
+    <div class="contenido">
+      <div class="bloque">
+        <div class="cabecera">
+          <div class="titu-img"><h2>Sainz y Colapinto</h2></div><div class="contador"><p>4/03</p></div>
+        </div>
+        <img src="https://phantom-marca.unidadeditorial.es/7533e349dc5c65bc7b423646203b1903/resize/828/f/webp/assets/multimedia/imagenes/2024/09/22/17270154796644.jpg" />
+        <p><strong>189 likes</strong></p>
+        <p class="descripcion">Esta es la descripción de la imagen mostrada en este marco</p>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

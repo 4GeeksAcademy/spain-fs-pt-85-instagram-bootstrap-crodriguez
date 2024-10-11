@@ -1,0 +1,148 @@
+/* estilos body */
+body {
+    margin-bottom: 50px;
+}
+/* fin estilos body */
+
+/* estilos nav */
+.logout {
+    margin-top: 10px;
+    color: red;
+    border-top: 1px solid grey;
+}
+.fa-instagram {
+    margin-right: 10px;
+    font-weight: 600;
+    font-size: 26px;
+}
+.navbar-brand {
+    font-weight: 600;
+}
+.dropdown-menu[data-bs-popper] {
+    left: -100px;
+}
+div#navbarTogglerDemo02 {
+    display: flex;
+    column-gap: 10px;
+}
+textarea {
+    border-color: #8080805c;
+    border-radius: 5px;
+    padding: 10px;
+}
+.fa-camera {
+    border: 1px solid #8080805c;
+    padding: 10px;
+    border-radius: 5px;
+}
+.fa-location-dot {
+    border: 1px solid #8080805c;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* fin estilos nav */
+
+/* estilos tabs */
+.nav.nav-tabs {
+    margin-top:50px;
+}
+.nav-tabs {
+    border:0;
+}
+.nav-link.active {
+    border:0;
+}
+/* fin estilos tabs */
+
+/* estilos tarjetas */
+.titulo {
+    background-color:#ffff;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+}
+.titulo h1 {
+    color:#000;
+    font-size: 32px;
+    font-weight:700;
+}
+.contenido {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bloque {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 30%;
+    background-color:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #8080805c;
+    border-radius: 5px;
+}
+@media screen and (max-width: 992px) { 
+    .bloque {
+        width: 90%;
+    }
+    .titu-img h2 {
+        font-size: 26px;
+        margin-right: 10px;
+    }
+    p {
+        font-size: 22px;
+    }
+}
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.titu-img {
+    
+}
+
+h2 {
+    color:#000000;
+    font-size: 16px;
+    font-weight:700;
+    padding: 10px;
+    vertical-align: middle;  
+    margin:0px;
+}
+img {
+    width:auto;
+}
+p {
+    color:#000000;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:0px;
+}
+/* fin estilos tarjetas */
+
+/* estilos grid */
+.row {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.col-12.col-sm-6.col-md-4 {
+    padding:5px;
+}
+.col-12.col-sm-6.col-md-4 img {
+    width: 100%;
+    
+}
+  @supports(object-fit: cover){
+    .col-12.col-sm-6.col-md-4 img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  }
+/* fin estilos grid */
